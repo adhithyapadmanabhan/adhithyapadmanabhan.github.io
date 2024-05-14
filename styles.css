@@ -1,38 +1,35 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 header {
-    background-color: #272727;
+    background-color: #333;
     color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.header-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 20px 0;
 }
 
 header h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-header h2 {
-    font-size: 24px;
-    margin-bottom: 30px;
+    font-size: 36px;
 }
 
 nav ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
     margin-right: 20px;
 }
 
@@ -40,7 +37,7 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -48,35 +45,46 @@ nav ul li a:hover {
 }
 
 section {
-    background-color: #fff;
     padding: 50px 0;
-    text-align: center;
-}
-
-.section-container {
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 section h2 {
-    font-size: 36px;
+    font-size: 30px;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 5px;
     margin-bottom: 20px;
 }
 
-section p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
-
 footer {
-    background-color: #272727;
+    background-color: #333;
     color: #fff;
-    text-align: center;
     padding: 20px 0;
+    text-align: center;
 }
 
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
+footer p {
+    font-size: 14px;
 }
