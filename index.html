@@ -4,107 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aparna Vijayakumar</title>
-    <style>
-        /* Global styles */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        /* Header styles */
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 50px 0;
-        }
-        header h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
-        header h2 {
-            font-size: 24px;
-        }
-        /* Navigation styles */
-        nav {
-            text-align: center;
-            margin-top: 20px;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline-block;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-            font-size: 18px;
-            transition: all 0.3s ease;
-        }
-        nav ul li a:hover {
-            color: #555;
-        }
-        /* Main content styles */
-        .content {
-            padding: 50px 0;
-            text-align: center;
-        }
-        .content h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        .content p {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
-        /* Footer styles */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        footer p {
-            font-size: 14px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Aparna Vijayakumar</h1>
-        <h2>Software Engineer | Content Creator | Lifelong Learner</h2>
+        <div class="header-container">
+            <h1>Aparna Vijayakumar</h1>
+            <h2>Software Engineer | Content Creator | Lifelong Learner</h2>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="container">
-        <div class="content" id="about">
+    <section id="about">
+        <div class="section-container">
             <h2>About Me</h2>
             <p>I'm a passionate software engineer, content creator, and lifelong learner. I love building things and sharing my knowledge with others.</p>
         </div>
+    </section>
 
-        <div class="content" id="work">
+    <section id="work">
+        <div class="section-container">
             <h2>Work</h2>
             <p>Here are some of the projects I've worked on:</p>
             <ul>
@@ -113,8 +39,10 @@
                 <li>Project 3</li>
             </ul>
         </div>
+    </section>
 
-        <div class="content" id="blog">
+    <section id="blog">
+        <div class="section-container">
             <h2>Blog</h2>
             <p>Check out my latest blog posts:</p>
             <ul>
@@ -123,8 +51,10 @@
                 <li>Post 3</li>
             </ul>
         </div>
+    </section>
 
-        <div class="content" id="contact">
+    <section id="contact">
+        <div class="section-container">
             <h2>Contact</h2>
             <p>Feel free to reach out to me:</p>
             <ul>
@@ -133,10 +63,12 @@
                 <li>Website: www.yourwebsite.com</li>
             </ul>
         </div>
-    </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Aparna Vijayakumar</p>
+        <div class="footer-container">
+            <p>&copy; 2024 Aparna Vijayakumar</p>
+        </div>
     </footer>
 </body>
 </html>
